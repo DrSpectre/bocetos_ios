@@ -48,7 +48,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <segue destination="UIQ-0F-u95" kind="show" id="cyQ-AG-7L2"/>
+                                            <segue destination="UIQ-0F-u95" kind="show" destinationCreationSelector="moviendome_de_pantalla:" id="cyQ-AG-7L2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2V-su-YED">
@@ -114,10 +114,10 @@
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Vista Citas-->
         <scene sceneID="M4w-6O-vVG">
             <objects>
-                <viewController id="UIQ-0F-u95" sceneMemberID="viewController">
+                <viewController id="UIQ-0F-u95" customClass="ControladorVistaCitas" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j3o-g0-KQa">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -221,6 +221,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gHS-L6-8ue"/>
+                    <connections>
+                        <outlet property="nombre_de_quien_lo_dijo" destination="b0w-VM-gWX" id="Gz8-AD-aUc"/>
+                        <outlet property="que_dijo_que" destination="Ic3-9u-gta" id="kCI-I3-ky2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BNZ-er-H2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
