@@ -17,14 +17,12 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view
-        
-        let valor = Int.random(in: 0...100)
-        Double.random(in: 0...100)
     }
 
     
     @IBSegueAction func al_abrir_pantalla_citas(_ coder: NSCoder) -> ControladorPantallaCitas? {
-        return ControladorPantallaCitas(cita_para_citar: cita_para_enviar, coder: coder)
+        return ControladorPantallaCitas(cita_para_citar: citas_disponibles.obtener_cita_aleatoria()
+                                        , coder: coder)
     }
 }
 
