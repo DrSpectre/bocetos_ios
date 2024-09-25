@@ -7,25 +7,18 @@
 
 import UIKit
 
-struct elemento: Codable{
-    let userId: Int
-    let id: Int
-    let title: String
-    let completed: Bool
-    
-}
 
 class ViewController: UIViewController {
+    var cita_para_enviar: Cita = Cita(quien_lo_dijo: "Creeper", que_dijo: "Tssseñor")
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view
     }
 
-
-    @IBSegueAction func moviendome_de_pantalla(_ coder: NSCoder) -> ControladorVistaCitas? {
-        return ControladorVistaCitas(titulo_secundario: "Nombre barbaro", coder: coder)
-    }
     
+    @IBSegueAction func al_abrir_pantalla_citas(_ coder: NSCoder) -> ControladorPantallaCitas? {
+        return ControladorPantallaCitas(muro_texto: "TSSSSSSSEÑOR", de_quien: "Creeper", coder: coder)
+    }
 }
 
