@@ -249,10 +249,10 @@
             </objects>
             <point key="canvasLocation" x="1262" y="15"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Agregar Cita-->
         <scene sceneID="fkG-RV-bd0">
             <objects>
-                <viewController id="36d-aC-bFg" sceneMemberID="viewController">
+                <viewController id="36d-aC-bFg" customClass="ControladorPantallaAgregarCita" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rz1-o3-OP5">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -289,17 +289,31 @@
                                     <constraint firstAttribute="height" constant="315" id="rmn-8E-Qnr"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfL-aK-uk5">
+                                <rect key="frame" x="137" y="617" width="119" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Agregar Cita"/>
+                                <connections>
+                                    <action selector="agregar_cita_nueva:" destination="36d-aC-bFg" eventType="touchUpInside" id="GRi-KX-9bC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="X5j-SS-8pE"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                         <color key="tintColor" systemColor="linkColor"/>
                         <constraints>
                             <constraint firstItem="EbK-64-GyX" firstAttribute="leading" secondItem="X5j-SS-8pE" secondAttribute="leading" constant="60" id="041-yv-JAC"/>
+                            <constraint firstItem="tfL-aK-uk5" firstAttribute="top" secondItem="uBe-Ey-GQ0" secondAttribute="bottom" constant="33.333333333333258" id="3wj-HJ-QNU"/>
                             <constraint firstItem="uBe-Ey-GQ0" firstAttribute="centerX" secondItem="X5j-SS-8pE" secondAttribute="centerX" id="8WT-jp-H7X"/>
                             <constraint firstItem="uBe-Ey-GQ0" firstAttribute="centerY" secondItem="X5j-SS-8pE" secondAttribute="centerY" id="SU1-mB-8Ub"/>
                             <constraint firstItem="EbK-64-GyX" firstAttribute="top" secondItem="X5j-SS-8pE" secondAttribute="top" constant="50" id="ZoL-vV-r4E"/>
+                            <constraint firstItem="tfL-aK-uk5" firstAttribute="centerX" secondItem="X5j-SS-8pE" secondAttribute="centerX" id="a0k-ER-tpi"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="que_es_lo_que_dijo" destination="3XF-G5-pnN" id="wkY-m0-Pj6"/>
+                        <outlet property="quien_lo_dijo_view" destination="k06-Pd-Jnj" id="r4T-b3-U82"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xeD-av-CLf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="YD6-6a-g1a" userLabel="Exit" sceneMemberID="exit"/>

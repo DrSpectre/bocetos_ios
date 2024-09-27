@@ -35,18 +35,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func voler_a_pantalla_inicio(segue: UIStoryboardSegue){
-        let pantalla_citas = segue.source as? ControladorPantallaCitas
-        // print(pantalla_citas?.cita_actual.texto)
-        
-        /*
-        if let pantalla_citas = segue.source as? ControladorPantallaCitas {
-            citas_disponibles.agregar_cita(pantalla_citas.cita_actual.texto,
-                                           quien_lo_dijo: pantalla_citas.cita_actual.nombre)
+        if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCita{
+            citas_disponibles.agregar_cita(<#T##que_dijo: String##String#>, quien_lo_dijo: <#T##String#>)
         }
-        else{
-            print("Eso no era un objeto de tipo <ControladorPantallaCitas>")
-        }
-         */
         
         
         actualizar_cantidad()
