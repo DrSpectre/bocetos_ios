@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     
     @IBAction func voler_a_pantalla_inicio(segue: UIStoryboardSegue){
         if let pantalla_agregar_citas = segue.source as? ControladorPantallaAgregarCita{
-            citas_disponibles.agregar_cita(<#T##que_dijo: String##String#>, quien_lo_dijo: <#T##String#>)
+            citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
         }
         
         
