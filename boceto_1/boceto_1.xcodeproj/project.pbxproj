@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35CAF6E72CA70E3E00669502 /* ControladorGeneradorCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35CAF6E62CA70E2D00669502 /* ControladorGeneradorCita.swift */; };
 		35EFCFFD2CA1C1E100111170 /* ControladorPantallaCitas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35EFCFFC2CA1C1D500111170 /* ControladorPantallaCitas.swift */; };
 		35F11B2D2C9B2B4A00E58312 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B2C2C9B2B4A00E58312 /* AppDelegate.swift */; };
 		35F11B2F2C9B2B4A00E58312 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F11B2E2C9B2B4A00E58312 /* SceneDelegate.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35CAF6E62CA70E2D00669502 /* ControladorGeneradorCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorGeneradorCita.swift; sourceTree = "<group>"; };
 		35EFCFFC2CA1C1D500111170 /* ControladorPantallaCitas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaCitas.swift; sourceTree = "<group>"; };
 		35F11B292C9B2B4A00E58312 /* boceto_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35F11B2C2C9B2B4A00E58312 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		3523ABA92C9DD92900663D8E /* controladores_de_vistas */ = {
 			isa = PBXGroup;
 			children = (
+				35CAF6E62CA70E2D00669502 /* ControladorGeneradorCita.swift */,
 				35EFCFFC2CA1C1D500111170 /* ControladorPantallaCitas.swift */,
 			);
 			path = controladores_de_vistas;
@@ -294,6 +297,7 @@
 				35F11B632C9B363900E58312 /* Cita.swift in Sources */,
 				35F11B312C9B2B4A00E58312 /* ViewController.swift in Sources */,
 				35F11B652C9B36DE00E58312 /* generador_de_citas.swift in Sources */,
+				35CAF6E72CA70E3E00669502 /* ControladorGeneradorCita.swift in Sources */,
 				35F11B2D2C9B2B4A00E58312 /* AppDelegate.swift in Sources */,
 				35F11B2F2C9B2B4A00E58312 /* SceneDelegate.swift in Sources */,
 				35EFCFFD2CA1C1E100111170 /* ControladorPantallaCitas.swift in Sources */,
