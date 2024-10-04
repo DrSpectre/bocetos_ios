@@ -9,6 +9,8 @@ import UIKit
 
 
 class ViewController: UIViewController {
+    @IBOutlet weak var VistaStack: UIStackView!
+    
     var cita_para_enviar: Cita = Cita(quien_lo_dijo: "Creeper", que_dijo: "Tssseñor")
     var citas_disponibles: GeneradorDeCitas = GeneradorDeCitas()
     var numero_aleatorio: Int = Int.random(in: 0...25)
@@ -44,12 +46,21 @@ class ViewController: UIViewController {
         
     }
     
-    /*@IBAction func regresar(segue: UIStoryboardSegue){
-        print("En esto del proceso")
-        print(segue.source as? ControladorPantallaCitas)
-        let elemento = segue.source as? ControladorPantallaCitas
-        print(elemento?.cita_actual.nombre)
-    }*/
+    override func viewDidLayoutSubviews() {
+       
+        if UIDevice.current.orientation == .portrait {
+            VistaStack.axis = .vertical
+            
+        }
+        else {
+            VistaStack.axis = .horizontal
+        }
+        
+    }
+    
+    override func viewWillLayoutSubviews() {
+        print("EMpezamos la rotacion de pantalla")
+    }
     
 }
 
