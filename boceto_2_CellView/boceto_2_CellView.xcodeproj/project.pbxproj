@@ -7,32 +7,32 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		359958832CB371FC00F0C169 /* boceto_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		350865482CB433AC00713233 /* boceto_2_CellView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_2_CellView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		359958952CB371FD00F0C169 /* Exceptions for "boceto_2" folder in "boceto_2" target */ = {
+		3508655A2CB433AD00713233 /* Exceptions for "boceto_2_CellView" folder in "boceto_2_CellView" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = 359958822CB371FC00F0C169 /* boceto_2 */;
+			target = 350865472CB433AC00713233 /* boceto_2_CellView */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		359958852CB371FC00F0C169 /* boceto_2 */ = {
+		3508654A2CB433AC00713233 /* boceto_2_CellView */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				359958952CB371FD00F0C169 /* Exceptions for "boceto_2" folder in "boceto_2" target */,
+				3508655A2CB433AD00713233 /* Exceptions for "boceto_2_CellView" folder in "boceto_2_CellView" target */,
 			);
-			path = boceto_2;
+			path = boceto_2_CellView;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		359958802CB371FC00F0C169 /* Frameworks */ = {
+		350865452CB433AC00713233 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,18 +42,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3599587A2CB371FC00F0C169 = {
+		3508653F2CB433AC00713233 = {
 			isa = PBXGroup;
 			children = (
-				359958852CB371FC00F0C169 /* boceto_2 */,
-				359958842CB371FC00F0C169 /* Products */,
+				3508654A2CB433AC00713233 /* boceto_2_CellView */,
+				350865492CB433AC00713233 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		359958842CB371FC00F0C169 /* Products */ = {
+		350865492CB433AC00713233 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				359958832CB371FC00F0C169 /* boceto_2.app */,
+				350865482CB433AC00713233 /* boceto_2_CellView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,67 +61,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		359958822CB371FC00F0C169 /* boceto_2 */ = {
+		350865472CB433AC00713233 /* boceto_2_CellView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 359958962CB371FD00F0C169 /* Build configuration list for PBXNativeTarget "boceto_2" */;
+			buildConfigurationList = 3508655B2CB433AD00713233 /* Build configuration list for PBXNativeTarget "boceto_2_CellView" */;
 			buildPhases = (
-				3599587F2CB371FC00F0C169 /* Sources */,
-				359958802CB371FC00F0C169 /* Frameworks */,
-				359958812CB371FC00F0C169 /* Resources */,
+				350865442CB433AC00713233 /* Sources */,
+				350865452CB433AC00713233 /* Frameworks */,
+				350865462CB433AC00713233 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				359958852CB371FC00F0C169 /* boceto_2 */,
+				3508654A2CB433AC00713233 /* boceto_2_CellView */,
 			);
-			name = boceto_2;
+			name = boceto_2_CellView;
 			packageProductDependencies = (
 			);
-			productName = boceto_2;
-			productReference = 359958832CB371FC00F0C169 /* boceto_2.app */;
+			productName = boceto_2_CellView;
+			productReference = 350865482CB433AC00713233 /* boceto_2_CellView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		3599587B2CB371FC00F0C169 /* Project object */ = {
+		350865402CB433AC00713233 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				KnownAssetTags = (
-					etiqueta,
-				);
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					359958822CB371FC00F0C169 = {
+					350865472CB433AC00713233 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 3599587E2CB371FC00F0C169 /* Build configuration list for PBXProject "boceto_2" */;
+			buildConfigurationList = 350865432CB433AC00713233 /* Build configuration list for PBXProject "boceto_2_CellView" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 3599587A2CB371FC00F0C169;
+			mainGroup = 3508653F2CB433AC00713233;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 359958842CB371FC00F0C169 /* Products */;
+			productRefGroup = 350865492CB433AC00713233 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				359958822CB371FC00F0C169 /* boceto_2 */,
+				350865472CB433AC00713233 /* boceto_2_CellView */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		359958812CB371FC00F0C169 /* Resources */ = {
+		350865462CB433AC00713233 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,7 +128,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3599587F2CB371FC00F0C169 /* Sources */ = {
+		350865442CB433AC00713233 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -141,7 +138,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		359958972CB371FD00F0C169 /* Debug */ = {
+		3508655C2CB433AD00713233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -150,7 +147,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V624A3T7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = boceto_2/Info.plist;
+				INFOPLIST_FILE = boceto_2_CellView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -161,7 +158,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mx.uacj.bocetos.boceto-2.boceto-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.uacj.bocetos.boceto-2.boceto-2-CellView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -169,7 +166,7 @@
 			};
 			name = Debug;
 		};
-		359958982CB371FD00F0C169 /* Release */ = {
+		3508655D2CB433AD00713233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -178,7 +175,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V624A3T7L3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = boceto_2/Info.plist;
+				INFOPLIST_FILE = boceto_2_CellView/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -189,7 +186,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "mx.uacj.bocetos.boceto-2.boceto-2";
+				PRODUCT_BUNDLE_IDENTIFIER = "mx.uacj.bocetos.boceto-2.boceto-2-CellView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -197,7 +194,7 @@
 			};
 			name = Release;
 		};
-		359958992CB371FD00F0C169 /* Debug */ = {
+		3508655E2CB433AD00713233 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		3599589A2CB371FD00F0C169 /* Release */ = {
+		3508655F2CB433AD00713233 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -319,25 +316,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3599587E2CB371FC00F0C169 /* Build configuration list for PBXProject "boceto_2" */ = {
+		350865432CB433AC00713233 /* Build configuration list for PBXProject "boceto_2_CellView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				359958992CB371FD00F0C169 /* Debug */,
-				3599589A2CB371FD00F0C169 /* Release */,
+				3508655E2CB433AD00713233 /* Debug */,
+				3508655F2CB433AD00713233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		359958962CB371FD00F0C169 /* Build configuration list for PBXNativeTarget "boceto_2" */ = {
+		3508655B2CB433AD00713233 /* Build configuration list for PBXNativeTarget "boceto_2_CellView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				359958972CB371FD00F0C169 /* Debug */,
-				359958982CB371FD00F0C169 /* Release */,
+				3508655C2CB433AD00713233 /* Debug */,
+				3508655D2CB433AD00713233 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 3599587B2CB371FC00F0C169 /* Project object */;
+	rootObject = 350865402CB433AC00713233 /* Project object */;
 }

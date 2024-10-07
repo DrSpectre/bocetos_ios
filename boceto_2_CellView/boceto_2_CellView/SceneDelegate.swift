@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  boceto_2
+//  boceto_2_CellView
 //
-//  Created by Jadzia Gallegos on 06/10/24.
+//  Created by Jadzia Gallegos on 07/10/24.
 //
 
 import UIKit
