@@ -31,7 +31,8 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
                         
                         self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
                         
-                        DispatchQueue.main.async {                        self.collectionView.reloadData()
+                        DispatchQueue.main.async {
+                            self.collectionView.reloadData()
                         }
                     }
                     else {
@@ -86,7 +87,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         // Configure the cell
         //celda.tintColor = UIColor.green
         
-        celda.etiqueta.text = self.lista_de_publicaciones[indexPath.item].title
+        celda.titulo.text = self.lista_de_publicaciones[indexPath.item].title
         celda.cuerpo.text = self.lista_de_publicaciones[indexPath.item].body
 
         // print(self.lista_de_publicaciones)
@@ -139,94 +140,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
 
 }
 
-/*
-class mod_layout: UICollectionViewLayout{
-    func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                             heightDimension: .fractionalHeight(1.0))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-      
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .absolute(44))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
-                                                         subitems: [item])
-      
-        let section = NSCollectionLayoutSection(group: group)
 
-
-        let layout = UICollectionViewCompositionalLayout(section: section)
-        
-        return layout
-    }
-}
-
-extension UICollectionView {
-
-    func createLayout() -> UICollectionViewLayout {
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                             heightDimension: .fractionalHeight(1.0))
-        let item = NSCollectionLayoutItem(layoutSize: itemSize)
-      
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                              heightDimension: .absolute(44))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize,
-                                                         subitems: [item])
-      
-        let section = NSCollectionLayoutSection(group: group)
-
-
-        let layout = UICollectionViewCompositionalLayout(section: section)
-        
-        return layout
-    }
-
-}
-
-class mod: UICollectionViewLayout{
-    
-}
-a*/
-
-
-extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-    }
-    // Method 2
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return 5
-    }
-    // Method 3
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return 5
-    }
-    //Method 4
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let collectionViewWidth = self.collectionView.frame.width
-        let collectionViewHeight =  self.collectionView.frame.height
-        
-        let cellWidth = (collectionViewWidth) / 1.1
-        let cellHeight = cellWidth * 0.5
-        
-        return CGSize(width: cellWidth , height: cellHeight)
-        
-    }
-    
-    override func viewWillLayoutSubviews() {
-        print("REPRENDER ESTAS mmadas")
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        (self.navigationController as? mod_navegador_principal)?.activar_navigation_bar(actviar: false)
-
-    }
-}
- 
 
 /*
 class ControladorPantallaGRIDCollectionView: UICollectionViewDelegate {
