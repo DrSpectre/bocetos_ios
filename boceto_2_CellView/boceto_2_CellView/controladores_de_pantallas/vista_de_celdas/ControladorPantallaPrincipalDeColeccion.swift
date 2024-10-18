@@ -11,7 +11,6 @@ import UIKit
 
 class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     private var lista_de_publicaciones: [Publicacion] = []
-    let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
 
     
     private let identificador_de_celda = "celda_pantalla_principal"
@@ -22,35 +21,12 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        
-        let ubicacion = URL(string: url_de_publicaciones)!
-        URLSession.shared.dataTask(with: ubicacion) {
-                (datos, respuesta, error) in do {
-                    if let publicaciones_recibidas = datos{
-                        let prueba_de_interpretacion_de_datos = try JSONDecoder().decode([Publicacion].self, from: publicaciones_recibidas)
-                        
-                        self.lista_de_publicaciones = prueba_de_interpretacion_de_datos
-                        
-                        DispatchQueue.main.async {
-                            self.collectionView.reloadData()
-                        }
-                    }
-                    else {
-                        print(respuesta)
-                    }
-                } catch {
-                    print("Error")
-                }
-        }.resume()
-        
-        /*
         proveedor_publicaciones.obtener_publicaicones{
             [weak self] (publicaciones) in self?.lista_de_publicaciones = publicaciones
             DispatchQueue.main.async {
                 self?.collectionView.reloadData()
             }
         }
-         */
         
 
     }
@@ -102,9 +78,12 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         
         let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         
+        // pantalla_de_publicacion.id_publicacion = indexPath.item
+        pantalla_de_publicacion.id_publicacion = self.lista_de_publicaciones[indexPath.item].id
+        
         self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
-        print(self.navigationController)
+        //print(self.navigationController)
 
     }
 
