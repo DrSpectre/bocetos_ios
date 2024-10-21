@@ -11,5 +11,3 @@ struct Usuario: Codable{
     var username: String
     var email: String
 }
-
-
