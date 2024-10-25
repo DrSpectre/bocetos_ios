@@ -18,6 +18,7 @@ class ControladorPantallaDelPost: UIViewController {
     
     private var publicacion: Publicacion?
     private var usuario: Usuario?
+    private var lista_comentarios: [Comentario] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
