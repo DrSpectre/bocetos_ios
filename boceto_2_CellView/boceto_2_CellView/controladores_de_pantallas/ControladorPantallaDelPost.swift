@@ -95,11 +95,8 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
         print("Aqui denberia hacer algo")
         let celda = collectionView.dequeueReusableCell(withReuseIdentifier: identificador_de_celda, for: indexPath)
     
-        // Configure the cell
         celda.tintColor = UIColor.green
-  
-        // print(self.lista_de_publicaciones)
-        
+
         return celda
     }
     
